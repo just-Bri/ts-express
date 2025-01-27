@@ -1,19 +1,43 @@
 const fakeDb = {
     people: [
         {
-            firstName: 'Bri',
-            lastName: 'Hammmond',
-            fullName: 'Bri Hammond'
-        }
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
+        {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
+        {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
+        {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
+        {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
+        {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            fullName: 'Jane Doe'
+        },
     ]
 }
 
 export const getPeople = (version: string) => {
-    if (version == 'v1') {
-        const result = fakeDb.people.map(({ fullName, ...rest }) => rest);
-        return result;
-    } else if (version == 'v2') {
-        const result = fakeDb.people.map(({ fullName }) => ({ fullName }));
-        return result;
+    switch (version) {
+        case 'v1':
+            return fakeDb.people.map(({ fullName, ...rest }) => rest);
+        default:
+            return fakeDb.people.map(({ fullName }) => ({ fullName }));
     }
 }
