@@ -1,0 +1,34 @@
+{
+    "people": [
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "fullName": "Jane Doe"
+        }
+    ]
+}
